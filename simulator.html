@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memory Allocation Simulator</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Memory Allocation</h1>
+            <h3>Simulation Dashboard</h3>
+        </header>
+
+        <section id="controls">
+            <h2>Create Task</h2>
+            <form id="taskForm">
+                <input type="text" name="taskSize" placeholder="Task Size" autocomplete="off" />
+                <input type="text" name="taskDuration" placeholder="Task Duration" autocomplete="off" />
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section id="taskQueue">
+            <h2>Task List</h2>
+            <table id="taskTable">
+                <tr><th>ID</th><th>Size (KB)</th><th>Time Left</th></tr>
+            </table>
+        </section>
+
+        <section id="memoryView">
+            <h2>Memory Blocks</h2>
+            <div id="memoryDisplay"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

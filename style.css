@@ -1,0 +1,72 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+}
+
+#container {
+    width: 75%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#controls, #taskQueue, #memoryView {
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+
+#memoryDisplay {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #7f8c8d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.memory-block {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.task-entry {
+    background: #27ae60;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.unavailable {
+    background-color: #c0392b;
+}
